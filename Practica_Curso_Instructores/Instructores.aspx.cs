@@ -13,5 +13,10 @@ namespace Practica_Curso_Instructores
         {
 
         }
+
+        protected void txtEspecialidad_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

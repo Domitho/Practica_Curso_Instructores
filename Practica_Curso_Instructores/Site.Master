@@ -68,5 +68,7 @@
         </div>
 
     </form>
+    <asp:ContentPlaceHolder ID="ScriptsContent" runat="server" />
+
 </body>
 </html>
