@@ -19,6 +19,8 @@
 </head>
 <body>
     <form runat="server">
+     
+
         <asp:ScriptManager runat="server">
             <Scripts>
                 <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
@@ -54,6 +56,9 @@
                         <li><a runat="server" href="~/">Inicio</a></li>
                         <li><a runat="server" href="~/About">Acerca de</a></li>
                         <li><a runat="server" href="~/Contact">Contacto</a></li>
+                         <li><a runat="server" href="~/Instructores">Instructores</a></li>
+                         <li><a runat="server" href="~/Curso">Curso</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -69,6 +74,7 @@
 
     </form>
     <asp:ContentPlaceHolder ID="ScriptsContent" runat="server" />
+
 
 </body>
 </html>
