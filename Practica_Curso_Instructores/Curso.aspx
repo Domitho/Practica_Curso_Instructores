@@ -43,24 +43,20 @@
     </div>
 
     <asp:GridView ID="gvCursos" runat="server" CssClass="table table-hover" AutoGenerateColumns="False" OnRowCommand="gvCursos_RowCommand" DataKeyNames="id_curso">
-    <Columns>
-        <asp:BoundField DataField="id_curso" HeaderText="ID" />
-        <asp:BoundField DataField="nombre_curso" HeaderText="Nombre" />
-        <asp:BoundField DataField="descripcion" HeaderText="Descripción" />
-        <asp:BoundField DataField="fecha_inicio" HeaderText="Inicio" DataFormatString="{0:yyyy-MM-dd}" />
-        <asp:BoundField DataField="fecha_fin" HeaderText="Fin" DataFormatString="{0:yyyy-MM-dd}" />
-        <asp:BoundField DataField="nombre_instructor" HeaderText="Instructor" />
-        <asp:TemplateField HeaderText="Acciones">
-            <ItemTemplate>
-                <asp:Button ID="btnEditar" runat="server" CommandName="Editar" Text="Editar" CssClass="btn btn-warning btn-sm me-1" />
-                <asp:Button ID="btnEliminar" runat="server" CommandName="Eliminar" Text="Eliminar" CssClass="btn btn-danger btn-sm" OnClientClick="return confirm('¿Estás seguro de eliminar este curso?');" />
-            </ItemTemplate>
-        </asp:TemplateField>
-    </Columns>
-</asp:GridView>
+        <Columns>
+            <asp:BoundField DataField="id_curso" HeaderText="ID" />
+            <asp:BoundField DataField="nombre_curso" HeaderText="Nombre" />
+            <asp:BoundField DataField="descripcion" HeaderText="Descripción" />
+            <asp:BoundField DataField="fecha_inicio" HeaderText="Inicio" DataFormatString="{0:yyyy-MM-dd}" />
+            <asp:BoundField DataField="fecha_fin" HeaderText="Fin" DataFormatString="{0:yyyy-MM-dd}" />
+            <asp:BoundField DataField="nombre_instructor" HeaderText="Instructor" />
+            <asp:TemplateField HeaderText="Acciones">
+                <ItemTemplate>
+                    <asp:Button ID="btnEditar" runat="server" CommandName="Editar" Text="Editar" CssClass="btn btn-warning btn-sm me-1" />
+                    <asp:Button ID="btnEliminar" runat="server" CommandName="Eliminar" Text="Eliminar" CssClass="btn btn-danger btn-sm" OnClientClick="return confirm('¿Estás seguro de eliminar este curso?');" />
+                </ItemTemplate>
+            </asp:TemplateField>
+        </Columns>
+    </asp:GridView>
 
-</asp:Content>
-
-<asp:Content ID="Content2" ContentPlaceHolderID="ScriptsContent" runat="server">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </asp:Content>
